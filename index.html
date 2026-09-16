@@ -104,7 +104,7 @@
           <div class="module-icon">🧠</div>
           <h3>Mind Engine</h3>
           <p>Train yourself to question information instead of simply consuming it.</p>
-          <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Open Mind Engine Module">
+          <button class="open-module" onclick="document.getElementById('mind').scrollIntoView()" aria-label="Open Mind Engine Module">
             OPEN MODULE →
           </button>
         </div>
@@ -112,6 +112,32 @@
           <div class="module-number">MODULE 02</div>
           <div class="module-icon">📰</div>
           <h3>Truth Lab</h3>
+          <!-- MIND ENGINE -->
+    <section class="section" id="mind">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 01 / MIND ENGINE</div>
+        <h2 class="section-title">QUESTION<br>EVERYTHING.</h2>
+        <p class="section-description">
+          Critical thinking is your mind's firewall. Test your ability to separate fact from assumption.
+        </p>
+      </div>
+      <div class="empathy-box reveal">
+        <div class="scenario">
+          "Everyone is saying the new tech stock is guaranteed to triple in value by next month! We have to buy now!"
+        </div>
+        <p style="color: var(--green); margin-bottom: 15px; font-family: monospace;">> CHOOSE YOUR REACTION:</p>
+        <button class="choice" onclick="mindTest('fomo')" aria-label="React with FOMO">
+          "I need to buy it right now so I don't miss out."
+        </button>
+        <button class="choice" onclick="mindTest('bias')" aria-label="React with bias">
+          "If everyone is saying it, it must be true."
+        </button>
+        <button class="choice" onclick="mindTest('critical')" aria-label="React with critical thinking">
+          "Who is claiming this? Where is the actual data?"
+        </button>
+        <div id="mindResult" style="margin-top: 20px; font-family: monospace;"></div>
+      </div>
+    </section>
           <p>Before you forward something, give your brain a five-second verification window.</p>
           <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Run Truth Lab Test">
             RUN TEST →
