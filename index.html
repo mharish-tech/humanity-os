@@ -88,128 +88,129 @@
       </div>
     </section>
 
-    <!-- MODULES -->
-    <section class="section">
-      <div class="section-header reveal">
-        <div class="eyebrow">SYSTEM / MODULES</div>
-        <h2 class="section-title">EXPLORE THE<br>HUMAN UPDATE.</h2>
-        <p class="section-description">
-          Your operating system has more than one component.
-          So does being human.
-        </p>
-      </div>
-      <div class="modules">
-        <div class="module reveal">
-          <div class="module-number">MODULE 01</div>
-          <div class="module-icon">🧠</div>
-          <h3>Mind Engine</h3>
-          <p>Train yourself to question information instead of simply consuming it.</p>
-          <button class="open-module" onclick="document.getElementById('mind').scrollIntoView()" aria-label="Open Mind Engine Module">
-            OPEN MODULE →
-          </button>
-        </div>
-        <div class="module reveal">
-          <div class="module-number">MODULE 02</div>
-          <div class="module-icon">📰</div>
-          <h3>Truth Lab</h3>
-          <!-- MIND ENGINE -->
-    <section class="section" id="mind">
-      <div class="section-header reveal">
-        <div class="eyebrow">MODULE 01 / MIND ENGINE</div>
-        <h2 class="section-title">QUESTION<br>EVERYTHING.</h2>
-        <p class="section-description">
-          Critical thinking is your mind's firewall. Test your ability to separate fact from assumption.
-        </p>
-      </div>
-      <div class="empathy-box reveal">
-        <div class="scenario">
-          "Everyone is saying the new tech stock is guaranteed to triple in value by next month! We have to buy now!"
-        </div>
-        <p style="color: var(--green); margin-bottom: 15px; font-family: monospace;">> CHOOSE YOUR REACTION:</p>
-        <button class="choice" onclick="mindTest('fomo')" aria-label="React with FOMO">
-          "I need to buy it right now so I don't miss out."
+    <!-- MODULES OVERVIEW GRID -->
+  <section class="section">
+    <div class="section-header reveal">
+      <div class="eyebrow">SYSTEM / MODULES</div>
+      <h2 class="section-title">EXPLORE THE<br>HUMAN UPDATE.</h2>
+      <p class="section-description">
+        Your operating system has more than one component.
+        So does being human.
+      </p>
+    </div>
+    <div class="modules">
+      <div class="module reveal">
+        <div class="module-number">MODULE 01</div>
+        <div class="module-icon">🧠</div>
+        <h3>Mind Engine</h3>
+        <p>Train yourself to question information instead of simply consuming it.</p>
+        <button class="open-module" onclick="document.getElementById('mind').scrollIntoView()" aria-label="Open Mind Engine Module">
+          OPEN MODULE →
         </button>
-        <button class="choice" onclick="mindTest('bias')" aria-label="React with bias">
-          "If everyone is saying it, it must be true."
-        </button>
-        <button class="choice" onclick="mindTest('critical')" aria-label="React with critical thinking">
-          "Who is claiming this? Where is the actual data?"
-        </button>
-        <div id="mindResult" style="margin-top: 20px; font-family: monospace;"></div>
       </div>
-    </section>
-          <p>Before you forward something, give your brain a five-second verification window.</p>
-          <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Run Truth Lab Test">
-            RUN TEST →
-          </button>
-        </div>
-        <div class="module reveal">
-          <div class="module-number">MODULE 03</div>
-          <div class="module-icon">❤️</div>
-          <h3>Empathy Engine</h3>
-          <p>Practice seeing the same situation from another person's perspective.</p>
-          <button class="open-module" onclick="document.getElementById('empathy').scrollIntoView()" aria-label="Enter Empathy Engine">
-            ENTER →
-          </button>
-        </div>
-        <div class="module reveal">
-          <div class="module-number">MODULE 04</div>
-          <div class="module-icon">📱</div>
-          <h3>Attention Monitor</h3>
-          <p>Your attention is one of the most valuable things you own. Spend it intentionally.</p>
-          <button class="open-module" onclick="document.getElementById('attention').scrollIntoView()" aria-label="Monitor Attention">
-            MONITOR →
-          </button>
-        </div>
-        <div class="module reveal">
-          <div class="module-number">MODULE 05</div>
-          <div class="module-icon">🌍</div>
-          <h3>Earth Protocol</h3>
-          <p>The planet does not have a recycle bin. Every action leaves a footprint.</p>
-          <button class="open-module" onclick="document.getElementById('earth').scrollIntoView()" aria-label="Activate Earth Protocol">
-            ACTIVATE →
-          </button>
-        </div>
-        <div class="module reveal">
-          <div class="module-number">MODULE 06</div>
-          <div class="module-icon">🤝</div>
-          <h3>Connection Layer</h3>
-          <p>Human connection isn't measured by followers, likes or notifications.</p>
-          <button class="open-module" onclick="document.getElementById('missions').scrollIntoView()" aria-label="Connect to Mission Mode">
-            CONNECT →
-          </button>
-        </div>
+      <div class="module reveal">
+        <div class="module-number">MODULE 02</div>
+        <div class="module-icon">📰</div>
+        <h3>Truth Lab</h3>
+        <p>Misinformation spreads when people react faster than they think.</p>
+        <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Open Truth Lab Module">
+          OPEN MODULE →
+        </button>
       </div>
-    </section>
+      <div class="module reveal">
+        <div class="module-number">MODULE 03</div>
+        <div class="module-icon">❤️</div>
+        <h3>Empathy Engine</h3>
+        <p>Practice seeing the same situation from another person's perspective.</p>
+        <button class="open-module" onclick="document.getElementById('empathy').scrollIntoView()" aria-label="Enter Empathy Engine">
+          ENTER →
+        </button>
+      </div>
+      <div class="module reveal">
+        <div class="module-number">MODULE 04</div>
+        <div class="module-icon">📱</div>
+        <h3>Attention Monitor</h3>
+        <p>Your attention is one of the most valuable things you own. Spend it intentionally.</p>
+        <button class="open-module" onclick="document.getElementById('attention').scrollIntoView()" aria-label="Monitor Attention">
+          MONITOR →
+        </button>
+      </div>
+      <div class="module reveal">
+        <div class="module-number">MODULE 05</div>
+        <div class="module-icon">🌍</div>
+        <h3>Earth Protocol</h3>
+        <p>The planet does not have a recycle bin. Every action leaves a footprint.</p>
+        <button class="open-module" onclick="document.getElementById('earth').scrollIntoView()" aria-label="Activate Earth Protocol">
+          ACTIVATE →
+        </button>
+      </div>
+      <div class="module reveal">
+        <div class="module-number">MODULE 06</div>
+        <div class="module-icon">🤝</div>
+        <h3>Connection Layer</h3>
+        <p>Human connection isn't measured by followers, likes or notifications.</p>
+        <button class="open-module" onclick="document.getElementById('missions').scrollIntoView()" aria-label="Connect to Mission Mode">
+          CONNECT →
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- TRUTH LAB -->
-    <section class="section lab" id="truth">
-      <div class="section-header reveal">
-        <div class="eyebrow">MODULE 02 / TRUTH LAB</div>
-        <h2 class="section-title">WOULD YOU<br>FORWARD THIS?</h2>
-        <p class="section-description">
-          Misinformation spreads when people react faster than they think.
-          Test your reaction.
+  <!-- MIND ENGINE (MODULE 01 INTERACTIVE SECTION) -->
+  <section class="section" id="mind">
+    <div class="section-header reveal">
+      <div class="eyebrow">MODULE 01 / MIND ENGINE</div>
+      <h2 class="section-title">QUESTION<br>EVERYTHING.</h2>
+      <p class="section-description">
+        Critical thinking is your mind's firewall. Test your ability to separate fact from assumption.
+      </p>
+    </div>
+    <div class="empathy-box reveal">
+      <div class="scenario">
+        "Everyone is saying the new tech stock is guaranteed to triple in value by next month! We have to buy now!"
+      </div>
+      <p style="color: var(--green); margin-bottom: 15px; font-family: monospace;">> CHOOSE YOUR REACTION:</p>
+      <button class="choice" onclick="mindTest('fomo')" aria-label="React with FOMO">
+        "I need to buy it right now so I don't miss out."
+      </button>
+      <button class="choice" onclick="mindTest('bias')" aria-label="React with bias">
+        "If everyone is saying it, it must be true."
+      </button>
+      <button class="choice" onclick="mindTest('critical')" aria-label="React with critical thinking">
+        "Who is claiming this? Where is the actual data?"
+      </button>
+      <div id="mindResult" style="margin-top: 20px; font-family: monospace;"></div>
+    </div>
+  </section>
+
+  <!-- TRUTH LAB (MODULE 02 INTERACTIVE SECTION) -->
+  <section class="section lab" id="truth">
+    <div class="section-header reveal">
+      <div class="eyebrow">MODULE 02 / TRUTH LAB</div>
+      <h2 class="section-title">WOULD YOU<br>FORWARD THIS?</h2>
+      <p class="section-description">
+        Misinformation spreads when people react faster than they think.
+        Test your reaction.
+      </p>
+    </div>
+    <div class="lab-box reveal">
+      <div class="fake-message">
+        <small>⚠ UNKNOWN SOURCE // MESSAGE RECEIVED</small>
+        <h3>⚠️ IMPORTANT!!! SHARE THIS WITH EVERYONE!!!</h3>
+        <p>
+          A dramatic claim is spreading online.
+          It contains no clear author, no reliable source and
+          asks you to share it immediately.
         </p>
       </div>
-      <div class="lab-box reveal">
-        <div class="fake-message">
-          <small>⚠ UNKNOWN SOURCE // MESSAGE RECEIVED</small>
-          <h3>⚠️ IMPORTANT!!! SHARE THIS WITH EVERYONE!!!</h3>
-          <p>
-            A dramatic claim is spreading online.
-            It contains no clear author, no reliable source and
-            asks you to share it immediately.
-          </p>
-        </div>
-        <div class="lab-buttons">
-          <button class="lab-btn" onclick="truthTest('forward')" aria-label="Forward the message">FORWARD IT</button>
-          <button class="lab-btn" onclick="truthTest('ignore')" aria-label="Ignore the message">IGNORE IT</button>
-          <button class="lab-btn" onclick="truthTest('verify')" aria-label="Verify the message first">VERIFY FIRST</button>
-        </div>
-        <div id="truthResult"></div>
+      <div class="lab-buttons">
+        <button class="lab-btn" onclick="truthTest('forward')" aria-label="Forward the message">FORWARD IT</button>
+        <button class="lab-btn" onclick="truthTest('ignore')" aria-label="Ignore the message">IGNORE IT</button>
+        <button class="lab-btn" onclick="truthTest('verify')" aria-label="Verify the message first">VERIFY FIRST</button>
       </div>
-    </section>
+      <div id="truthResult"></div>
+    </div>
+  </section>
 
     <!-- EMPATHY -->
     <section class="section" id="empathy">
