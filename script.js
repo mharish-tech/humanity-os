@@ -174,3 +174,19 @@ function generateQR() {
 }
 
 window.addEventListener("load", generateQR);
+/* ===============================
+   MIND ENGINE
+================================ */
+function mindTest(answer) {
+  const result = document.getElementById("mindResult");
+  if (answer === 'critical') {
+    result.style.color = "#8cffb0";
+    result.innerHTML = "✓ FIREWALL ACTIVE. You asked for data instead of following the crowd.";
+  } else if (answer === 'fomo') {
+    result.style.color = "#ff8b8b";
+    result.innerHTML = "⚠ FOMO DETECTED. Fear Of Missing Out bypasses critical thinking.";
+  } else {
+    result.style.color = "#ffd166";
+    result.innerHTML = "◐ CONFIRMATION BIAS. Trusting a source without verifying the underlying facts.";
+  }
+}
