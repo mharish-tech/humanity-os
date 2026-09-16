@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUMANITY OS — Upgrade Yourself</title>
+  
+  <!-- QR CODE LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  
+  <!-- STYLES AND SCRIPTS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot">
+    <div class="boot-logo">HUMANITY OS</div>
+    <div class="boot-text">INITIALISING HUMAN AWARENESS...</div>
+    <div class="boot-bar">
+      <div class="boot-progress"></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav aria-label="Main Navigation">
+    <div class="logo">HUMANITY OS</div>
+    <div class="nav-status">
+      <span class="dot"></span> SYSTEM ONLINE
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid"></div>
+      <div class="orb"></div>
+      <div class="hero-content">
+        <div class="system-label">HUMAN OPERATING SYSTEM // VERSION 1.0</div>
+        <h1>UPGRADE<br><span>YOURSELF.</span></h1>
+        <p class="hero-description">
+          Technology gets an update with one click.
+          But becoming a better human being requires
+          <strong>thought, empathy and action.</strong>
+          <br><br>
+          <strong>Welcome to Humanity OS.</strong>
+        </p>
+        <button class="start" onclick="document.getElementById('os').scrollIntoView()" aria-label="Start Humanity OS System">
+          START SYSTEM →
+        </button>
+      </div>
+    </section>
+
+    <!-- OS STATUS -->
+    <section class="section" id="os">
+      <div class="section-header reveal">
+        <div class="eyebrow">SYSTEM / 01</div>
+        <h2 class="section-title">YOUR HUMANITY<br>STATUS.</h2>
+        <p class="section-description">
+          There is no app that can measure how kind, thoughtful or responsible
+          you are. But there are choices that reveal it.
+        </p>
+      </div>
+      <div class="dashboard reveal">
+        <div class="dashboard-top">
+          <span>HUMANITY_OS://STATUS</span>
+          <span>LIVE</span>
+        </div>
+        <div class="dashboard-grid">
+          <div class="stat">
+            <div class="stat-name">CRITICAL THINKING</div>
+            <div class="stat-value good">ONLINE</div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">EMPATHY</div>
+            <div class="stat-value warning">UPDATE?</div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">ATTENTION</div>
+            <div class="stat-value alert">FRAGMENTED</div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">PLANET CARE</div>
+            <div class="stat-value good">ACTIVE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULES -->
+    <section class="section">
+      <div class="section-header reveal">
+        <div class="eyebrow">SYSTEM / MODULES</div>
+        <h2 class="section-title">EXPLORE THE<br>HUMAN UPDATE.</h2>
+        <p class="section-description">
+          Your operating system has more than one component.
+          So does being human.
+        </p>
+      </div>
+      <div class="modules">
+        <div class="module reveal">
+          <div class="module-number">MODULE 01</div>
+          <div class="module-icon">🧠</div>
+          <h3>Mind Engine</h3>
+          <p>Train yourself to question information instead of simply consuming it.</p>
+          <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Open Mind Engine Module">
+            OPEN MODULE →
+          </button>
+        </div>
+        <div class="module reveal">
+          <div class="module-number">MODULE 02</div>
+          <div class="module-icon">📰</div>
+          <h3>Truth Lab</h3>
+          <p>Before you forward something, give your brain a five-second verification window.</p>
+          <button class="open-module" onclick="document.getElementById('truth').scrollIntoView()" aria-label="Run Truth Lab Test">
+            RUN TEST →
+          </button>
+        </div>
+        <div class="module reveal">
+          <div class="module-number">MODULE 03</div>
+          <div class="module-icon">❤️</div>
+          <h3>Empathy Engine</h3>
+          <p>Practice seeing the same situation from another person's perspective.</p>
+          <button class="open-module" onclick="document.getElementById('empathy').scrollIntoView()" aria-label="Enter Empathy Engine">
+            ENTER →
+          </button>
+        </div>
+        <div class="module reveal">
+          <div class="module-number">MODULE 04</div>
+          <div class="module-icon">📱</div>
+          <h3>Attention Monitor</h3>
+          <p>Your attention is one of the most valuable things you own. Spend it intentionally.</p>
+          <button class="open-module" onclick="document.getElementById('attention').scrollIntoView()" aria-label="Monitor Attention">
+            MONITOR →
+          </button>
+        </div>
+        <div class="module reveal">
+          <div class="module-number">MODULE 05</div>
+          <div class="module-icon">🌍</div>
+          <h3>Earth Protocol</h3>
+          <p>The planet does not have a recycle bin. Every action leaves a footprint.</p>
+          <button class="open-module" onclick="document.getElementById('earth').scrollIntoView()" aria-label="Activate Earth Protocol">
+            ACTIVATE →
+          </button>
+        </div>
+        <div class="module reveal">
+          <div class="module-number">MODULE 06</div>
+          <div class="module-icon">🤝</div>
+          <h3>Connection Layer</h3>
+          <p>Human connection isn't measured by followers, likes or notifications.</p>
+          <button class="open-module" onclick="document.getElementById('missions').scrollIntoView()" aria-label="Connect to Mission Mode">
+            CONNECT →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUTH LAB -->
+    <section class="section lab" id="truth">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 02 / TRUTH LAB</div>
+        <h2 class="section-title">WOULD YOU<br>FORWARD THIS?</h2>
+        <p class="section-description">
+          Misinformation spreads when people react faster than they think.
+          Test your reaction.
+        </p>
+      </div>
+      <div class="lab-box reveal">
+        <div class="fake-message">
+          <small>⚠ UNKNOWN SOURCE // MESSAGE RECEIVED</small>
+          <h3>⚠️ IMPORTANT!!! SHARE THIS WITH EVERYONE!!!</h3>
+          <p>
+            A dramatic claim is spreading online.
+            It contains no clear author, no reliable source and
+            asks you to share it immediately.
+          </p>
+        </div>
+        <div class="lab-buttons">
+          <button class="lab-btn" onclick="truthTest('forward')" aria-label="Forward the message">FORWARD IT</button>
+          <button class="lab-btn" onclick="truthTest('ignore')" aria-label="Ignore the message">IGNORE IT</button>
+          <button class="lab-btn" onclick="truthTest('verify')" aria-label="Verify the message first">VERIFY FIRST</button>
+        </div>
+        <div id="truthResult"></div>
+      </div>
+    </section>
+
+    <!-- EMPATHY -->
+    <section class="section" id="empathy">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 03 / EMPATHY ENGINE</div>
+        <h2 class="section-title">SAME WORLD.<br>DIFFERENT STORY.</h2>
+        <p class="section-description">We often see behaviour before we see the reason behind it.</p>
+      </div>
+      <div class="empathy-box reveal">
+        <div class="scenario">
+          A student suddenly becomes quiet, stops participating and starts sitting alone.
+          What do you do?
+        </div>
+        <button class="choice" onclick="empathy('judge')" aria-label="Judge the student">
+          "Something is wrong with them."
+        </button>
+        <button class="choice" onclick="empathy('ignore')" aria-label="Ignore the student">
+          "I'll leave them alone."
+        </button>
+        <button class="choice" onclick="empathy('ask')" aria-label="Check on the student">
+          "I'll check if they're okay."
+        </button>
+        <div id="empathyResult"></div>
+      </div>
+    </section>
+
+    <!-- ATTENTION -->
+    <section class="section attention" id="attention">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 04 / ATTENTION MONITOR</div>
+        <h2 class="section-title">WHERE DOES<br>YOUR MIND GO?</h2>
+        <p class="section-description">
+          Every notification asks for a tiny piece of your attention.
+          Thousands of tiny pieces become your day.
+        </p>
+      </div>
+      <div class="attention-container">
+        <div class="attention-card reveal">
+          <h3>ATTENTION DISTRIBUTION</h3>
+          <div class="ring">
+            <div class="ring-inner">
+              <strong>68%</strong>
+              <span>DIGITAL</span>
+            </div>
+          </div>
+          <p style="color:#7f8e85;text-align:center;">
+            Illustrative dashboard — your real usage depends on your habits.
+          </p>
+        </div>
+        <div class="attention-card reveal">
+          <h3>CHANGE ONE VARIABLE</h3>
+          <p style="color:#829088;margin:20px 0;">
+            How much time would you like to protect from unnecessary screen use?
+          </p>
+          <input type="range" min="0" max="100" value="30" id="attentionRange" aria-label="Adjust attention protection percentage">
+          <h2 style="margin-top:25px;">
+            <span id="attentionValue">30</span>%
+          </h2>
+          <p id="attentionMessage" style="color:#8cffb0;margin-top:10px;">
+            Small changes still count.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EARTH -->
+    <section class="section earth" id="earth">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 05 / EARTH PROTOCOL</div>
+        <h2 class="section-title">THE PLANET IS NOT<br>UNLIMITED STORAGE.</h2>
+        <p class="section-description">
+          You don't need to change the whole world today.
+          Start with one thing you can actually control.
+        </p>
+      </div>
+      <div class="eco-grid">
+        <div class="eco reveal">
+          <h3>♻️ REUSE</h3>
+          <p>Give an object another life before replacing it.</p>
+          <button onclick="ecoAction(this)" aria-label="Commit to reuse">COMMIT</button>
+        </div>
+        <div class="eco reveal">
+          <h3>🚰 SAVE</h3>
+          <p>Use water and electricity intentionally.</p>
+          <button onclick="ecoAction(this)" aria-label="Commit to save">COMMIT</button>
+        </div>
+        <div class="eco reveal">
+          <h3>🌱 GROW</h3>
+          <p>Support green spaces and protect living ecosystems.</p>
+          <button onclick="ecoAction(this)" aria-label="Commit to grow">COMMIT</button>
+        </div>
+        <div class="eco reveal">
+          <h3>🗑️ REDUCE</h3>
+          <p>Think twice before creating unnecessary waste.</p>
+          <button onclick="ecoAction(this)" aria-label="Commit to reduce">COMMIT</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSIONS -->
+    <section class="section" id="missions">
+      <div class="section-header reveal">
+        <div class="eyebrow">MODULE 06 / MISSION MODE</div>
+        <h2 class="section-title">REAL LIFE<br>MISSIONS.</h2>
+        <p class="section-description">
+          Awareness that stays on a screen is only information.
+          The goal is action.
+        </p>
+      </div>
+      <div class="missions">
+        <div class="mission reveal">
+          <span>MISSION 001</span>
+          <h3 style="margin:15px 0;">The 10-Minute Conversation</h3>
+          <p>Talk to someone without checking your phone.</p>
+        </div>
+        <div class="mission reveal">
+          <span>MISSION 002</span>
+          <h3 style="margin:15px 0;">The Verification Rule</h3>
+          <p>Before sharing one piece of information, check its source.</p>
+        </div>
+        <div class="mission reveal">
+          <span>MISSION 003</span>
+          <h3 style="margin:15px 0;">The Invisible Person</h3>
+          <p>Thank someone whose work is usually unnoticed.</p>
+        </div>
+        <div class="mission reveal">
+          <span>MISSION 004</span>
+          <h3 style="margin:15px 0;">The Waste Audit</h3>
+          <p>Notice one unnecessary piece of waste you create today.</p>
+        </div>
+        <div class="mission reveal">
+          <span>MISSION 005</span>
+          <h3 style="margin:15px 0;">Listen First</h3>
+          <p>In one conversation, listen completely before preparing your reply.</p>
+        </div>
+        <div class="mission reveal">
+          <span>MISSION 006</span>
+          <h3 style="margin:15px 0;">Give Without Posting</h3>
+          <p>Do something helpful without needing recognition for it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATE -->
+    <section class="section update">
+      <div class="section-header reveal" style="margin:auto;text-align:center;">
+        <div class="eyebrow">SYSTEM UPDATE</div>
+        <h2 class="section-title">READY TO INSTALL<br>THE HUMAN UPDATE?</h2>
+        <p class="section-description" style="margin:20px auto;">
+          The update isn't an app.
+          It's a decision to think a little deeper,
+          care a little more and act a little better.
+        </p>
+      </div>
+      <div class="update-terminal reveal">
+        <div class="terminal-line">> Checking current version...</div>
+        <div class="terminal-line terminal-green">✓ Self-awareness module detected</div>
+        <div class="terminal-line">> Installing critical thinking...</div>
+        <div class="terminal-line">> Installing empathy...</div>
+        <div class="terminal-line">> Installing responsibility...</div>
+        <div class="terminal-line">> Installing courage to act...</div>
+        <div id="updateProgress">
+          <div id="updateBar"></div>
+        </div>
+        <button class="update-button" onclick="installUpdate()" aria-label="Install Human Update">
+          INSTALL HUMAN UPDATE
+        </button>
+        <div id="updateResult"></div>
+      </div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section class="section">
+      <div class="personal reveal">
+        <div class="eyebrow">PERSONAL UPDATE</div>
+        <h2 class="section-title">WRITE YOUR<br>OWN UPDATE.</h2>
+        <p class="section-description">What's one thing you want to change in yourself?</p>
+        <textarea id="personalInput" aria-label="Write your personal update" placeholder="Example: I will stop forwarding information without checking it..."></textarea>
+        <button class="generate" onclick="createUpdate()" aria-label="Create my update">
+          CREATE MY UPDATE
+        </button>
+        <div id="personalResult"></div>
+      </div>
+    </section>
+
+    <!-- QR -->
+    <section class="section qr-section">
+      <div class="eyebrow">SHARE THE SYSTEM</div>
+      <h2 class="section-title">SCAN TO ENTER<br>HUMANITY OS.</h2>
+      <p class="qr-note">
+        This QR code is generated automatically from the
+        current website address. Once you publish this website,
+        anyone can scan it and open the live Humanity OS.
+      </p>
+      <div class="qr-box">
+        <div id="qrcode"></div>
+        <strong>HUMANITY OS</strong>
+        <p style="margin-top:8px;color:#777;">Scan. Explore. Think. Act.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">HUMANITY OS</div>
+    <p>We keep upgrading our technology.</p>
+    <p style="font-size:22px;color:#ddd;">When will we upgrade ourselves?</p>
+    <p style="margin-top:30px;">
+      A social-awareness project about technology,
+      humanity and the choices between them.
+    </p>
+  </footer>
+
+</body>
+</html>
