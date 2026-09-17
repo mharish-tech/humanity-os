@@ -227,7 +227,7 @@
         <button class="choice" onclick="empathy('judge')" aria-label="Judge the student">
           "Something is wrong with them."
         </button>
-        <button class="choice" onclick="empathy('ignore')" aria-label="Ignore the student">
+        <button class="choice" onclick="empathy('leave')" aria-label="Ignore the student">
           "I'll leave them alone."
         </button>
         <button class="choice" onclick="empathy('ask')" aria-label="Check on the student">
@@ -368,16 +368,24 @@
       <div class="update-terminal reveal">
         <div class="terminal-line">> Checking current version...</div>
         <div class="terminal-line terminal-green">✓ Self-awareness module detected</div>
-        <div class="terminal-line">> Installing critical thinking...</div>
-        <div class="terminal-line">> Installing empathy...</div>
-        <div class="terminal-line">> Installing responsibility...</div>
-        <div class="terminal-line">> Installing courage to act...</div>
+        
+        <!-- CHANGE 1: Wrapped these 4 lines in the installSteps ID -->
+        <div id="installSteps">
+          <div class="terminal-line">> Installing critical thinking...</div>
+          <div class="terminal-line">> Installing empathy...</div>
+          <div class="terminal-line">> Installing responsibility...</div>
+          <div class="terminal-line">> Installing courage to act...</div>
+        </div>
+        
         <div id="updateProgress">
           <div id="updateBar"></div>
         </div>
-        <button class="update-button" onclick="installUpdate()" aria-label="Install Human Update">
+        
+        <!-- CHANGE 2: Added id="updateBtn" to this button -->
+        <button id="updateBtn" class="update-button" onclick="installUpdate()" aria-label="Install Human Update">
           INSTALL HUMAN UPDATE
         </button>
+        
         <div id="updateResult"></div>
       </div>
     </section>
