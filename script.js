@@ -66,14 +66,18 @@ function truthTest(answer) {
 ================================ */
 function empathy(answer) {
   const result = document.getElementById("empathyResult");
+  
   if (answer === "ask") {
     result.innerHTML =
-      "❤️ EMPATHY MODULE ACTIVE — Sometimes the most powerful question is simply: " +
-      "“Are you okay?”";
+      "❤️ EMPATHY MODULE ACTIVE — Sometimes the most powerful question is simply: “Are you okay?”";
+      
+  } else if (answer === "leave") { // <-- Change "leave" to match whatever your 2nd button passes in the HTML
+    result.innerHTML =
+      "Leaving them alone might feel like giving them space, but isolation can make quiet struggles harder. A gentle check-in is usually better.";
+      
   } else {
     result.innerHTML =
-      "Think again. You don't know the complete story behind someone's behaviour. " +
-      "Understanding begins when we become curious instead of immediately judging.";
+      "Think again. You don't know the complete story behind someone's behaviour. Understanding begins when we become curious instead of immediately judging.";
   }
 }
 
@@ -88,7 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("attentionValue").innerText = value;
       let message = "";
 
-      if (value < 25) {
+      // Check for exactly 0 first
+      if (value == 0) {
+        message = "No protected time yet. Your attention is fully exposed to digital noise.";
+      } else if (value < 25) {
         message = "A small protected space for yourself.";
       } else if (value < 60) {
         message = "Good. Intentional attention is a habit.";
@@ -117,7 +124,16 @@ function installUpdate() {
   const progress = document.getElementById("updateProgress");
   const bar = document.getElementById("updateBar");
   const result = document.getElementById("updateResult");
+  const btn = document.getElementById("updateBtn"); 
+  const steps = document.getElementById("installSteps"); 
   
+  // This fixes the button bug by locking it and changing the text to "INSTALLING..."
+  if (btn) {
+    btn.disabled = true;
+    btn.style.opacity = "0.5";
+    btn.innerText = "INSTALLING...";
+  }
+
   progress.style.display = "block";
   let value = 0;
 
@@ -127,6 +143,22 @@ function installUpdate() {
 
     if (value >= 100) {
       clearInterval(interval);
+      
+      // This changes the button text to "UPDATE COMPLETE" when finished
+      if (btn) {
+        btn.innerText = "UPDATE COMPLETE";
+      }
+      
+      // This changes the terminal lines from "Installing..." to checkmarks
+      if (steps) {
+        steps.innerHTML = 
+          "✓ Critical thinking installed.<br>" +
+          "✓ Empathy installed.<br>" +
+          "✓ Responsibility installed.<br>" +
+          "✓ Courage to act installed.";
+        steps.style.color = "#8cffb0"; 
+      }
+      
       result.innerHTML =
         "<br><span style='color:#8cffb0'>" +
         "✓ UPDATE INSTALLED.<br><br>" +
